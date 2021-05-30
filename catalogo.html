@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Libre-ría</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+    <link rel="apple-touch-icon" href="assets/img/apple-libro.png">
+    <!----- icono para apple y safari -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/book.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light shadow logo-color">
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	    navbar-light = texto negro de la letra
+	    bg-white = fondo de color blanco
+	    -->
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand h1 logo-color " href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                <i class='bx bx-md bx-book-reader'></i>
+
+
+                <!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+
+                <span class="text-light h3">Libre-</span><span class="text-light h5">Ría</span>
+
+
+            </a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		        por un punto de interrupción principal.
+		         flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		         d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		        directos en elementos flexibles
+		        -->
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center ">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light"
+                                href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light" href="about.html">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light"
+                                href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light"
+                                href="green-place.html">Green-Place</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light"
+                                href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!---------------------------------------------------------Fin de las opciones del menu
+                ------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex navbar-light  ">
+                    <a class="nav-link text-light" href="#"><i class='bx  bx-search-alt bx-sm bx-burst-hover'></i></a>
+                    <a class="nav-link text-light" href=" #"><i class='bx bx-like bx-sm bx-tada-hover'></i></a>
+                    <a class="nav-link text-light" href=" #"><i
+                            class='bx bx-message-rounded-error bx-sm bx-tada-hover'></i></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
+        <div
+            class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center w-100">
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Nuestro Catálogo</h1>
+                <h3 class="h4 pb-2 regular-400 ">Sumergite en un mundo de Libros</h3>
+                <p class="banner-body logo-color pb-2 light-300 borde-transp w-100">
+                    Encontrarás una variedad ámplia de productos <strong>Edicion Limitada</strong> que sólo fueron
+                    posibles de conseguir gracias a nuestros amigos de <a class="text-dark" href="#">BooksOnWorld</a>
+                </p>
+                <a href="contact.html"><button type="submit"
+                        class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Consultas</button></a>
+                <a href="about.html"><button type="submit"
+                        class="btn rounded-pill logo-color text-light px-4 light-300">Quienes Somos</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Our Work -->
+    <section class="container py-5">
+        <div class="  my-5">
+            <nav class="navbar borde-transp radius-all justify-content-around">
+                <a class="navbar-brand text-light">Busca por Título</a>
+                <form class="form-inline d-flex">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Ej: Harry Potter"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+
+        <div class="row projects gx-lg-5">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing social business">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="./assets/img/catalogo01.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Marketing Digital</h5>
+                        <p class="card-text light-300 text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolor.
+                        </p>
+                        <span class="text-decoration-none color-icon light-300">
+                            Leer Más <i class='bx bx-info-square ms-2 '></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project graphic social">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/catalogo-02.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Branding</h5>
+                        <p class="card-text light-300 text-dark">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="text-decoration-none color-icon light-300">
+                            Leer Más <i class='bx bx-info-square ms-2 '></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic business">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/catalogo03.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Ventas Digitales</h5>
+                        <p class="card-text light-300 text-dark">
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiatdolore eu fugiat nulla pariatur.
+                        </p>
+                        <span class="text-decoration-none color-icon light-300">
+                            Leer Más <i class='bx bx-info-square ms-2 '></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project social business">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/catalogo04.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Aplicaciones</h5>
+                        <p class="card-text light-300 text-dark">
+                            Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="text-decoration-none color-icon light-300">
+                            Leer Más <i class='bx bx-info-square ms-2 '></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project marketing">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/catalogo05.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Mercado BtoB</h5>
+                        <p class="card-text light-300 text-dark">
+                            Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="text-decoration-none color-icon light-300">
+                            Leer Más <i class='bx bx-info-square ms-2 '></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/catalogo06.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Tips Financieros</h5>
+                        <p class="card-text light-300 text-dark">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="text-decoration-none color-icon light-300">
+
+                            Leer Más
+                            <i class='bx bx-info-square ms-2 '></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-dark text-white">Ant.</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-light">1</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-dark text-white">2</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-dark text-white">Sig.</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Work -->
+
+
+
+
+    <!-- Start Footer -->
+    <footer class="logo-color pt-4 text-center">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-4 col-12 align-left ">
+                    <a class="navbar-brand text-light" href="index.html">
+                        <i class='bx bx-md bx-book-reader '></i>
+                        <span class="text-light h5">Libre-</span><span class="text-light h5 semi-bold-600">Ría</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Encontranos también en nuestras redes sociales.
+                    </p>
+                    <ul class="list-inline footer-icons light-300 ">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="#">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="#">
+                                <i class='bx bxl-twitter bx-md'></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="#">
+                                <i class='bx bxl-instagram-alt bx-md'></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Estudio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-light py-1" href="green-place.html">Green-Place</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Tu consulta no molesta</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="#">011-4444-3211</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="#">Libre-ria@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 logo-color py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Libre-ría. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://cursophp.com.ar/" target="_blank"><strong>Tomas Palmitano</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function () {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function () {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

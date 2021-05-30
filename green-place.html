@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Libre-ría</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+    <link rel="apple-touch-icon" href="assets/img/apple-libro.png">
+    <!----- icono para apple y safari -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/book.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light shadow logo-color">
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	    navbar-light = texto negro de la letra
+	    bg-white = fondo de color blanco
+	    -->
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand h1 logo-color " href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                <i class='bx bx-md bx-book-reader'></i>
+
+
+                <!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+
+                <span class="text-light h3">Libre-</span><span class="text-light h5">Ría</span>
+
+
+            </a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		        por un punto de interrupción principal.
+		         flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		         d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		        directos en elementos flexibles
+		        -->
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center ">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light"
+                                href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light" href="about.html">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light"
+                                href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light"
+                                href="green-place.html">Green-Place</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 text-light"
+                                href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!---------------------------------------------------------Fin de las opciones del menu
+                ------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex navbar-light  ">
+                    <a class="nav-link text-light" href="#"><i class='bx  bx-search-alt bx-sm bx-burst-hover'></i></a>
+                    <a class="nav-link text-light" href=" #"><i class='bx bx-like bx-sm bx-tada-hover'></i></a>
+                    <a class="nav-link text-light" href=" #"><i
+                            class='bx bx-message-rounded-error bx-sm bx-tada-hover'></i></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start pricing -->
+    <div class="container-lg py-5 bannerGreen">
+        <div class="col-md-12 m-auto text-center py-5">
+            <h1 class="pricing-header h2 text-light sombra ">Green-Place</h1>
+            <p class="pricing-footer text-light sombra">
+                La Lectura Digital llegó para quedarse
+            </p>
+        </div>
+
+
+        <div class="row px-lg-3">
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <i class='pricing-table-icon display-3 bx bxs-box pt-4 color-icon'></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Plan Gratuito</h2>
+                        <p>$0</p>
+                        <ul class="pricing-table-body text-start text-dark px-4 list-unstyled light-300">
+                            <li><i class="bx bxs-circle me-2"></i>1 Usuario</li>
+                            <li><i class="bx bxs-circle me-2"></i>1 Libro aleatorio al mes</li>
+
+                        </ul>
+                        <div class="pricing-table-footer pt-5">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-primary light-300">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pt-sm-0 pt-3 px-xl-3">
+                <div class="pricing-table card logo-color h-100 card-rounded shadow-sm border-white py-5">
+                    <div class="pricing-table-body card-body text-center text-white align-self-center p-md-0">
+                        <i class='pricing-table-icon display-3 bx bxs-box pt-4 text-white'></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Plan Básico</h2>
+                        <p>$250/Mes</p>
+                        <ul class="pricing-table-list text-start text-dark px-4 list-unstyled light-300">
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>2 Usuarios</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>1 libro a elección al mes</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>50% Descuento a nuestros eventos
+                            </li>
+
+                        </ul>
+                        <div class="pricing-table-footer pt-5 pb-2">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-light light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body text-center align-self-center p-md-0">
+
+                        <i class='pricing-table-icon display-3 bx bxs-box pt-4 color-icon'></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Premium</h2>
+                        <p>$850/Mes</p>
+                        <ul class="pricing-table-list text-start text-dark px-4 list-unstyled light-300">
+                            <li><i class="bx bxs-circle me-2"></i>5 usuarios</li>
+                            <li><i class="bx bxs-circle me-2"></i>5 Libros a elección</li>
+                            <li><i class="bx bxs-circle me-2"></i>Entrada gratuita a todos los eventos</li>
+
+                        </ul>
+                        <div class="pricing-table-footer pt-1">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-primary light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- End Content -->
+
+
+
+
+
+    <!-- Start Pricing Horizontal Section -->
+    <section class="bg-light pt-sm-0 py-5">
+        <div class="container py-5">
+
+            <h1 class="h2 semi-bold-600 text-center mt-2">Precios Anuales</h1>
+            <p class="text-center pb-5 light-300">Se aplica hasta un 25% descuento.</p>
+
+            <!-- Start Pricing Horizontal -->
+            <div class="pricing-horizontal row col-10 m-auto d-flex shadow-sm rounded overflow-hidden bg-white">
+                <div class="pricing-horizontal-icon col-md-3 text-center logo-color text-light py-4">
+
+                    <i class='display-1 bx bxs-box pt-4'></i>
+                    <h5 class="h5 semi-bold-600 pb-4 light-300">Gratis</h5>
+                </div>
+                <div
+                    class="pricing-horizontal-body offset-lg-1 col-md-5 col-lg-4 d-flex align-items-center pl-5 pt-lg-0 pt-4">
+                    <ul class="text-left px-4 list-unstyled mb-0 light-300">
+                        <li><i class="bx bxs-circle me-2"></i>1 Usuario</li>
+                        <li><i class="bx bxs-circle me-2"></i>1 Libro aleatorio al mes</li>
+                    </ul>
+                </div>
+                <div class="pricing-horizontal-tag col-md-4 text-center pt-3 d-flex align-items-center">
+                    <div class="w-100 light-300">
+                        <p>$0</p>
+                        <a href="#" class="btn rounded-pill px-4 btn-outline-primary mb-3">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Horizontal -->
+
+            <!-- Start Pricing Horizontal -->
+            <div class="pricing-horizontal row col-10 m-auto d-flex shadow-sm rounded overflow-hidden my-5 bg-white">
+                <div class="pricing-horizontal-icon col-md-3 text-center logo-color text-light py-4">
+                    <i class='display-1 bx bxs-box pt-4'></i>
+                    <h5 class="h5 semi-bold-600 pb-4 light-300">Básico</h5>
+                </div>
+                <div
+                    class="pricing-horizontal-body offset-lg-1 col-md-5 col-lg-4 d-flex align-items-center pl-5 pt-lg-0 pt-4">
+                    <ul class="text-left px-4 list-unstyled mb-0 light-300">
+                        <li class="text-dark"><i class="bx bxs-circle me-2"></i>2 Usuarios</li>
+                        <li class="text-dark"><i class="bx bxs-circle me-2"></i>1 libro a elección al mes</li>
+                        <li class="text-dark"><i class="bx bxs-circle me-2"></i>50% Descuento a nuestros eventos
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing-horizontal-tag col-md-4 text-center pt-3 d-flex align-items-center">
+                    <div class="w-100 light-300">
+                        <p>$2.800/Año</p>
+                        <a href="#" class="btn rounded-pill px-4 btn-outline-primary mb-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Horizontal -->
+
+            <!-- Start Pricing Horizontal -->
+            <div class="pricing-horizontal row col-10 m-auto d-flex shadow-sm rounded overflow-hidden bg-white">
+                <div class="pricing-horizontal-icon col-md-3 text-center logo-color text-light py-4">
+                    <i class='display-1 bx bxs-box pt-4'></i>
+                    <h5 class="h5 semi-bold-600 pb-4 light-300">Premium</h5>
+                </div>
+                <div
+                    class="pricing-horizontal-body offset-lg-1 col-md-5 col-lg-4 d-flex align-items-center pl-5 pt-lg-0 pt-4">
+                    <ul class="text-left px-4 list-unstyled mb-0 light-300">
+                        <li><i class="bx bxs-circle me-2"></i>5 usuarios</li>
+                        <li><i class="bx bxs-circle me-2"></i>5 Libros a elección</li>
+                        <li><i class="bx bxs-circle me-2"></i>Entrada gratuita a todos los eventos</li>
+                    </ul>
+                </div>
+                <div class="pricing-horizontal-tag col-md-4 text-center pt-3 d-flex align-items-center">
+                    <div class="w-100 light-300">
+                        <p>$8.500/Año</p>
+                        <a href="#" class="btn rounded-pill px-4 btn-outline-primary mb-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Horizontal -->
+
+        </div>
+    </section>
+    <!--End Pricing Horizontal Section-->
+
+
+
+
+    <!-- Start Footer -->
+    <footer class="logo-color pt-4 text-center">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-4 col-12 align-left text-center">
+                    <a class="navbar-brand text-light" href="index.html">
+                        <i class='bx bx-md bx-book-reader '></i>
+                        <span class="text-light h5">Libre-</span><span class="text-light h5 semi-bold-600">Ría</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Encontranos también en nuestras redes sociales.
+                    </p>
+                    <ul class="list-inline footer-icons light-300 ">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="#">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="#">
+                                <i class='bx bxl-twitter bx-md'></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="#">
+                                <i class='bx bxl-instagram-alt bx-md'></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Estudio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-light py-1" href="green-place.html">Green-Place</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Tu consulta no molesta</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="#">011-4444-3211</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="#">Libre-ria@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 logo-color py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Libre-ría. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://cursophp.com.ar/" target="_blank"><strong>Tomas Palmitano</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
